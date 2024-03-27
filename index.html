@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240327202817">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__container">
+				<img class="header__logo" src="img/myLogo.svg" alt="Logo">
+				<a class="header__button button__page" href="https://github.com/romeo198808">Llet's see my Git Hub</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+							<li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+							<li class="menu__item"><a href="#skills" class="menu__link ">Skills</a></li>
+						</ul>
+						<ul class="social__list header__social">
+							<li class="social__item"><a href="https://www.facebook.com/share/tbJW13p4BZwmYYxc/" class="social__link _icon-fb" aria-label="facebook"></a></li>
+							<li class="social__item"><a href="" class="social__link _icon-insta" aria-label="instagram"></a></li>
+							<li class="social__item"><a href="https://github.com/romeo198808" class="social__link _icon-github" aria-label="github"></a></li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="name">
+				<div class="name__container">
+					<h2 class="name__last">Makarenko</h2>
+					<h2 class="name__first">Roman</h2>
+					<p class="name__front">Frontend Developer</p>
+					<p class="name__text">I will solve any of your problems quickly, efficiently, professionally!</p>
+					<span class="_icon-mouse"></span>
+				</div>
+
+			</div>
+			<section class="projects">
+				<div class="projects__container">
+					<h2 class="projects__title"> My projects:</h2>
+					<ul class="projects__list" id="projects">
+						<li class="projects__item">
+							<picture><source srcset="img/funiro.webp" type="image/webp"><img class="projects__img" src="img/funiro.jpg" alt=""></picture>
+							<a class="projects__link" href="https://romeo198808.github.io/Funiro/">
+								<span class="projects__name">Funiro</span>
+								<p class="projects__desk">Online store of furniture fittings</p>
+							</a>
+						</li>
+
+						<li class="projects__item">
+							<picture><source srcset="img/sedona.webp" type="image/webp"><img class="projects__img" src="img/sedona.jpg" alt=""></picture>
+							<a class="projects__link" href=" https://romeo198808.github.io/Sedona-study/">
+								<span class="projects__name">Sedona</span>
+								<p class="projects__desk">Website business card of the President of the City of Sedona</p>
+							</a>
+						</li>
+
+
+
+
+					</ul>
+				</div>
+
+			</section>
+			<section class="about" id="about">
+				<div class="about__container">
+					<h2 class="about__title">About me</h2>
+					<blockquote class="about__blockquote">I look at ordinary things with my own special gaze.</blockquote>
+					<div class="about__img">
+						<picture><source srcset="img/foto-small.webp" type="image/webp"><img src="img/foto-small.jpg" alt=""></picture>
+
+					</div>
+					<div class="about__inner">
+						<p class="about__text">Hello, my name is Roman, I am a Front-end developer.</p>
+						<p class="about__text">I am constantly developing in this direction, striving for new things and improving.</p>
+						<p class="about__text">In such a task as competent and high-quality layout, the following qualities help me:
+							determination,
+							scrupulousness, responsibility, attention to detail and the ability to find the right solutions.</p>
+					</div>
+					<h3 class="about__skills" id="skills">Professional skills:</h3>
+					<ul class="about__list">
+						<li class="about__item">Excellent knowledge of HTML5, CSS3</li>
+						<li class="about__item">Basic knowledge of JavaScript (native, ES6)</li>
+						<li class="about__item">Adaptive layout (Media queries, grid, Flexbox)</li>
+						<li class="about__item">SCSS preprocessor</li>
+						<li class="about__item">Gulp, WebPack for automation</li>
+						<li class="about__item">GIT (version control system)</li>
+						<li class="about__item">PHP (basics, working with MySQL databases)</li>
+						<li class="about__item">Photoshop, Illustrator, Figma for layout</li>
+						<li class="about__item">Neat, valid code (W3C, BEM)</li>
+					</ul>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<img class="header__logo footer__logo" src="img/myLogo.svg" alt="Logo">
+				<ul class="menu__list footer__nav">
+					<li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+					<li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+					<li class="menu__item"><a href="#skills" class="menu__link ">Skills</a></li>
+				</ul>
+				<div class="footer__inner">
+					<span class="footer__mail">romeomv.1988@gmail.com</span>
+					<ul class="social__list footer__social">
+						<li class="social__item"><a href="https://www.facebook.com/share/tbJW13p4BZwmYYxc/" class="social__link _icon-fb" aria-label="facebook"></a></li>
+						<li class="social__item"><a href="" class="social__link _icon-insta" aria-label="instagram"></a></li>
+						<li class="social__item"><a href="https://github.com/romeo198808" class="social__link _icon-github" aria-label="github"></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/app.min.js?_v=20240327202817"></script>
+</body>
+
+</html>
