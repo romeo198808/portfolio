@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240327202817">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240330200209">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 <body>
 	<div class="wrapper">
 
-		<header class="header">
+		<header class="header" data-scroll="90" data-scroll-show="700">
 			<div class="header__container">
 				<img class="header__logo" src="img/myLogo.svg" alt="Logo">
 				<a class="header__button button__page" href="https://github.com/romeo198808">Llet's see my Git Hub</a>
@@ -50,7 +50,7 @@
 				</div>
 
 			</div>
-			<section class="projects">
+			<section class="projects" data-watch-threshold="0.1" data-watch>
 				<div class="projects__container">
 					<h2 class="projects__title"> My projects:</h2>
 					<ul class="projects__list" id="projects">
@@ -77,7 +77,7 @@
 				</div>
 
 			</section>
-			<section class="about" id="about">
+			<section class="about" id="about" data-watch-threshold="0.3" data-watch data-watch-once>
 				<div class="about__container">
 					<h2 class="about__title">About me</h2>
 					<blockquote class="about__blockquote">I look at ordinary things with my own special gaze.</blockquote>
@@ -129,7 +129,7 @@
 
 	</div>
 
-	<script src="js/app.min.js?_v=20240327202817"></script>
+	<script src="js/app.min.js?_v=20240330200209"></script>
 </body>
 
 </html>

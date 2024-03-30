@@ -267,8 +267,33 @@ h6 {
   color: #1f042c;
 }
 
+.page {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
 .icon-menu {
   display: none;
+}
+
+.header {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 100;
+}
+
+.header._header-scroll {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header._header-show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 
 .header__container {
@@ -470,6 +495,9 @@ h6 {
 
 .name {
   position: relative;
+  min-height: 80vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .name::before {
@@ -535,8 +563,24 @@ h6 {
   transition: background-color 300ms linear;
 }
 
-.projects__title {
+.projects {
   margin-top: 1.25rem;
+  -webkit-perspective-origin: bottom center;
+          perspective-origin: bottom center;
+  -webkit-transform: perspective(100px);
+          transform: perspective(100px);
+  -webkit-transform: rotate3d(1, 1, 0, 90deg);
+          transform: rotate3d(1, 1, 0, 90deg);
+  -webkit-transition: all 0.3s linear 0.4s;
+  transition: all 0.3s linear 0.4s;
+}
+
+.projects._watcher-view {
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+          transform: rotate3d(0, 0, 0, 0);
+}
+
+.projects__title {
   font-size: 2.1875rem;
   font-weight: bold;
   line-height: 120%;
@@ -591,10 +635,21 @@ h6 {
   color: #f2f2f2;
 }
 
+.about._watcher-view .about__container {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.3s linear 0.4s;
+  transition: all 0.3s linear 0.4s;
+}
+
 .about__container {
   display: -ms-grid;
   display: grid;
   row-gap: 1.25rem;
+  -webkit-transform: translateX(-120%);
+      -ms-transform: translateX(-120%);
+          transform: translateX(-120%);
 }
 
 .about__title {
@@ -610,7 +665,7 @@ h6 {
 }
 
 .about__img img {
-  width: 100%;
+  width: 80%;
 }
 
 .about__text {
@@ -769,6 +824,10 @@ h6 {
 
   .footer__mail {
     margin: 0;
+  }
+
+  .name {
+    min-height: 100vh;
   }
 
   .name__container {
