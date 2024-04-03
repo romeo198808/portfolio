@@ -19,7 +19,23 @@
 @font-face {
   font-family: ClashDisplay;
   font-display: swap;
+  src: url("../fonts/ClashDisplay-Medium.woff2") format("woff2"), url("../fonts/ClashDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  font-display: swap;
   src: url("../fonts/ClashDisplay-Regular.woff2") format("woff2"), url("../fonts/ClashDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Epilogue;
+  font-display: swap;
+  src: url("../fonts/Epilogue-Regular.woff2") format("woff2"), url("../fonts/Epilogue-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -37,22 +53,6 @@
   font-display: swap;
   src: url("../fonts/Epilogue-Bold.woff2") format("woff2"), url("../fonts/Epilogue-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Epilogue;
-  font-display: swap;
-  src: url("../fonts/Epilogue-Regular.woff2") format("woff2"), url("../fonts/Epilogue-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: ClashDisplay;
-  font-display: swap;
-  src: url("../fonts/ClashDisplay-Medium.woff2") format("woff2"), url("../fonts/ClashDisplay-Medium.woff") format("woff");
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -567,17 +567,20 @@ h6 {
   margin-top: 1.25rem;
   -webkit-perspective-origin: bottom center;
           perspective-origin: bottom center;
-  -webkit-transform: perspective(100px);
-          transform: perspective(100px);
-  -webkit-transform: rotate3d(1, 1, 0, 90deg);
-          transform: rotate3d(1, 1, 0, 90deg);
-  -webkit-transition: all 0.3s linear 0.4s;
-  transition: all 0.3s linear 0.4s;
 }
 
-.projects._watcher-view {
-  -webkit-transform: rotate3d(0, 0, 0, 0);
-          transform: rotate3d(0, 0, 0, 0);
+.projects .projects__container {
+  -webkit-transform: translateX(300%);
+      -ms-transform: translateX(300%);
+          transform: translateX(300%);
+  -webkit-transition: all 0.5s linear 0.4s;
+  transition: all 0.5s linear 0.4s;
+}
+
+.projects._watcher-view .projects__container {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .projects__title {
