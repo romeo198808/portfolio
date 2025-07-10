@@ -451,7 +451,7 @@ h6 {
 .projects .projects__container {
   -webkit-transform: translateX(300%);
   transform: translateX(300%);
-  transition: all .5s linear .4s
+  transition: all .9s ease-in
 }
 .projects._watcher-view .projects__container {
   -webkit-transform: translateX(0);
